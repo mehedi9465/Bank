@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<style>
+    .bg-info{
+        background: linear-gradient(#030e0800,#28C76F);
+    }
+</style>
+
+<body>
+    <section id="transaction" class="mt-5">
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <h1 class="h1 text-center mx-auto border border-3 w-25 p-3">Transaction</h1>
+
+                <div class="row row-cols-3 mt-5 g-5">
+                    <div class="col">
+                        <div class="p-5 bg-info rounded">
+                            <h5 class="text-center text-white">Deposit</h5>
+                            <p class="fs-1 text-center text-white">$<span id="depoCount">0</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="p-5 bg-info rounded">
+                            <h5 class="text-center text-white">Withdrawn</h5>
+                            <p class="fs-1 text-center text-white">$<span id="withdrawCount">0</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="p-5 bg-info rounded ">
+                            <h5 class="text-center text-white">Balance</h5>
+                            <p class="fs-1 text-center text-white">$<span id="balanceCount">10000</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-7">
+                <div class="row row-cols-2 mt-5 g-5">
+                    <div class="col">
+                        <div class="p-5 bg-info rounded text-center">
+                            <input class="form-control" type="number" name="" id="depoAmount" placeholder="Enter the Deposit Amount">
+                            <button id="depositBtn" class="btn btn-outline-secondary btn-sm mt-4">Deposit</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="p-5 bg-info rounded text-center">
+                            <input class="form-control" type="number" name="" id="withdrawAmount" placeholder="Enter the withdraw Amount">
+                            <button id="withdrawBtn" class="btn btn-outline-secondary btn-sm mt-4">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="bank.js"></script>
+</body>
+</html>
